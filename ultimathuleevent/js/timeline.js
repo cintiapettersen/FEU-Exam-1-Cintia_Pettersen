@@ -47,8 +47,8 @@
 
      if (properties.item == 2) {
 
-         if (document.body.contains(document.getElementById('cardarticle'))) {
-             var elem3 = document.getElementById("cardarticle");
+         if (document.body.contains(document.getElementById('nhcardarticle'))) {
+             var elem3 = document.getElementById("nhcardarticle");
              elem3.remove();
          }
 
@@ -66,9 +66,9 @@
          function myarticlebox2() {
              const horizonbox = document.getElementById('myhorizon');
 
-             const cardarticle = document.createElement('article');
-             cardarticle.setAttribute('class', 'cardarticle');
-             cardarticle.setAttribute('id', 'cardarticle');
+             const nhcardarticle = document.createElement('article');
+             nhcardarticle.setAttribute('class', 'nhcardarticle');
+             nhcardarticle.setAttribute('id', 'nhcardarticle');
 
              // Create an h3 and set the text content to the film's title
              const h3 = document.createElement('h3');
@@ -79,14 +79,14 @@
              p.setAttribute('id', 'jupiterp');
              p.textContent = "New Horizons gets a gravity assist from Jupiter and gathers unique, exciting science data on the giantplanet and its moons.";
 
-             horizonbox.appendChild(cardarticle);
-             cardarticle.appendChild(h3);
-             cardarticle.appendChild(p);
+             horizonbox.appendChild(nhcardarticle);
+             nhcardarticle.appendChild(h3);
+             nhcardarticle.appendChild(p);
          }
 
      } else if (properties.item == 3) {
-         if (document.body.contains(document.getElementById('cardarticle'))) {
-             var elem3 = document.getElementById("cardarticle");
+         if (document.body.contains(document.getElementById('nhcardarticle'))) {
+             var elem3 = document.getElementById("nhcardarticle");
              elem3.remove();
          }
 
@@ -105,9 +105,9 @@
 
              const horizonbox = document.getElementById('myhorizon');
 
-             const cardarticle = document.createElement('article');
-             cardarticle.setAttribute('class', 'cardarticle left-offset');
-             cardarticle.setAttribute('id', 'cardarticle');
+             const nhcardarticle = document.createElement('article');
+             nhcardarticle.setAttribute('class', 'nhcardarticle left-offset');
+             nhcardarticle.setAttribute('id', 'nhcardarticle');
 
              // Create an h3 and set the text content to the film's title
              const h3 = document.createElement('h3');
@@ -116,15 +116,15 @@
              const p = document.createElement('p');
              p.textContent = "Exploration of the Pluto system begins with a 6-month intensive study to understand these mysterious worlds.";
 
-             horizonbox.appendChild(cardarticle);
-             cardarticle.appendChild(h3);
-             cardarticle.appendChild(p);
+             horizonbox.appendChild(nhcardarticle);
+             nhcardarticle.appendChild(h3);
+             nhcardarticle.appendChild(p);
          }
 
 
      } else if (properties.item == 4) {
-         if (document.body.contains(document.getElementById('cardarticle'))) {
-             var elem3 = document.getElementById("cardarticle");
+         if (document.body.contains(document.getElementById('nhcardarticle'))) {
+             var elem3 = document.getElementById("nhcardarticle");
              elem3.remove();
          }
 
@@ -143,9 +143,9 @@
 
              const horizonbox = document.getElementById('myhorizon');
 
-             const cardarticle = document.createElement('article');
-             cardarticle.setAttribute('class', 'cardarticle left-offset');
-             cardarticle.setAttribute('id', 'cardarticle');
+             const nhcardarticle = document.createElement('article');
+             nhcardarticle.setAttribute('class', 'nhcardarticle left-offset');
+             nhcardarticle.setAttribute('id', 'nhcardarticle');
 
              // Create an h3 and set the text content to the film's title
              const h3 = document.createElement('h3');
@@ -154,15 +154,15 @@
              const p = document.createElement('p');
              p.textContent = "New Horizons gets a gravity assist from Jupiter and gathers unique, exciting science data on the giantplanet and its moons.";
 
-             horizonbox.appendChild(cardarticle);
-             cardarticle.appendChild(h3);
-             cardarticle.appendChild(p);
+             horizonbox.appendChild(nhcardarticle);
+             nhcardarticle.appendChild(h3);
+             nhcardarticle.appendChild(p);
          }
 
      } else if (properties.item == 5) {
 
-         if (document.body.contains(document.getElementById('cardarticle'))) {
-             var elem3 = document.getElementById("cardarticle");
+         if (document.body.contains(document.getElementById('nhcardarticle'))) {
+             var elem3 = document.getElementById("nhcardarticle");
              elem3.remove();
          }
 
@@ -181,9 +181,9 @@
 
              const horizonbox = document.getElementById('myhorizon');
 
-             const cardarticle = document.createElement('article');
-             cardarticle.setAttribute('class', 'cardarticle left-offset');
-             cardarticle.setAttribute('id', 'cardarticle');
+             const nhcardarticle = document.createElement('article');
+             nhcardarticle.setAttribute('class', 'nhcardarticle left-offset');
+             nhcardarticle.setAttribute('id', 'nhcardarticle');
 
              // Create an h3 and set the text content to the film's title
              const h3 = document.createElement('h3');
@@ -192,16 +192,16 @@
              const p = document.createElement('p');
              p.textContent = "NASA’s New Horizons spacecraft will buzz by the most primitive and most distant object ever explored. New Horizons’ encounter with Kuiper Belt object 2014 MU69 (now known as Ultima Thule), which orbits a billion miles beyond Pluto, will offer the first close-up look at such a pristine building block of the solar system – and will be performed in a region of deep space that was practically unknown just a generation ago.";
 
-             horizonbox.appendChild(cardarticle);
-             cardarticle.appendChild(h3);
-             cardarticle.appendChild(p);
+             horizonbox.appendChild(nhcardarticle);
+             nhcardarticle.appendChild(h3);
+             nhcardarticle.appendChild(p);
          }
 
 
      } else if (properties.item == 1) {
 
-         if (document.body.contains(document.getElementById('cardarticle'))) {
-             var elem3 = document.getElementById("cardarticle");
+         if (document.body.contains(document.getElementById('nhcardarticle'))) {
+             var elem3 = document.getElementById("nhcardarticle");
              elem3.remove();
          }
 
@@ -220,9 +220,9 @@
 
              const horizonbox = document.getElementById('myhorizon');
 
-             const cardarticle = document.createElement('article');
-             cardarticle.setAttribute('class', 'cardarticle');
-             cardarticle.setAttribute('id', 'cardarticle');
+             const nhcardarticle = document.createElement('article');
+             nhcardarticle.setAttribute('class', 'nhcardarticle');
+             nhcardarticle.setAttribute('id', 'nhcardarticle');
 
              // Create an h3 and set the text content to the film's title
              const h3 = document.createElement('h3');
@@ -231,9 +231,9 @@
              const p = document.createElement('p');
              p.textContent = "New Horizons spacecraft lifts off from Cape Canaveral, Florida";
 
-             horizonbox.appendChild(cardarticle);
-             cardarticle.appendChild(h3);
-             cardarticle.appendChild(p);
+             horizonbox.appendChild(nhcardarticle);
+             nhcardarticle.appendChild(h3);
+             nhcardarticle.appendChild(p);
          }
 
      } else {

@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>New Horizons - Interactive Timeline</title>
+    <meta name="description" content="Microsite about New Horizons approach to Ultima Thule 31.December 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Dosis:600,700,800|Fira+Sans:500,500i,600,600i,700,700i|Gochi+Hand|Roboto:500,500i,700,700i,900,900i|Rubik:500,500i,700,700i,900,900i|Source+Code+Pro:900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link href="js/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+    <script src="js/vis/dist/vis.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/timeline.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav id="hamburger" role="navigation">
+        <div id="menuToggle" class="white">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="newhorizon.html">New Horizon</a>
+                </li>
+                <li><a href="ultimathule.html">Ultima Thule</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <img class="logo" src="images/LethaLogo%20Green.svg" />
+    </nav>
+    <nav class="mobile-hidden">
+
+        <img class="logo" src="images/LethaLogo%20Green.svg" />
+        <div id="countdown-container">
+            <h1 id="mycountdown"></h1>
+        </div>
+        <ul class="tablet-white">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="newhorizon.html">New Horizon</a>
+            </li>
+            <li><a href="ultimathule.html">Ultima Thule</a>
+            </li>
+            <li><a href="gallery.html">Gallery</a>
+            </li>
+            <li><a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <section class="timeline-section">
+        <div class="myvisual">
+            <img class="solar-background" src="images/SolarSystemBig.png" alt="The solar system" />
+            <div id="myhorizon">
+                <img src="images/NewHorizon.png" alt="New Horizon vessel vector">
+            </div>
+        </div>
+        <div id="visualization"></div>
+        <script src="js/timeline.js"></script>
+    </section>
+
+</body>
+
+</html>

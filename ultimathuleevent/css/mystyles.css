@@ -144,7 +144,10 @@ nav li {
     transform: translateY(-94px);
 }
 
-*/------------MYHORIZON------------*/ .myvisual {
+
+/*------------MYHORIZON------------*/
+
+.myvisual {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -184,13 +187,13 @@ nav li {
     margin: 0 auto;
 }
 
-.cardarticle {
+.nhcardarticle {
     padding: 0 16px 16px;
     background-color: white;
     overflow-y: scroll;
 }
 
-.cardarticle::-webkit-scrollbar {
+.nhcardarticle::-webkit-scrollbar {
     display: none;
 }
 
@@ -449,6 +452,82 @@ dd {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+
+/*--------------------GALLERY------------------------*/
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-main {
+    width: 100%;
+    background-color: black;
+}
+
+.gallerycontainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: white;
+    margin: 56px 0;
+}
+
+.gallerycard {
+    margin: 1rem;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    box-shadow: gray 1px 1px 4px;
+    height: 600px;
+}
+
+.gallerycard img {
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.gallerycardarticle {
+    padding: 0 16px 16px;
+    overflow-y: scroll;
+    max-height: 44%;
+    word-wrap: break-word;
+}
+
+.gallerycardarticle::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .gallerycard {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 calc(50% - 2rem);
+        -ms-flex: 1 1 calc(50% - 2rem);
+        flex: 0 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .gallerycard {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 calc(33% - 2rem);
+        -ms-flex: 1 1 calc(33% - 2rem);
+        flex: 0 1 calc(33% - 2rem);
+        max-width: calc(33% - 2rem);
+    }
 }
 
 
