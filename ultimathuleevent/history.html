@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>New Horizons - Ultima Thule Event</title>
+    <meta name="description" content="Microsite about New Horizons approavh to Ultima Thule 31.December 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Dosis:600,700,800|Fira+Sans:500,500i,600,600i,700,700i|Gochi+Hand|Roboto:500,500i,700,700i,900,900i|Rubik:500,500i,700,700i,900,900i|Source+Code+Pro:900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link href="js/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+    <script src="js/vis/dist/vis.js"></script>
+    <script src="js/countdown.js"></script>
+
+
+
+
+
+    <style type="text/css">
+        .redtest {
+            background-color: red;
+            width: 50%;
+            margin: 0:
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            font-family: sans-serif;
+        }
+        
+        .historical-intro {
+            margin-bottom: 32px;
+        }
+        
+        .como-row {
+            position: relative;
+            width: 100%;
+            padding: 0 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .centerline-left {
+            display: none;
+            border-right: 5px solid #3fa9f5;
+            width: 48%;
+            margin-left: 5px
+        }
+        
+        .centerline-right {
+            display: none;
+            border-left: 5px solid #3fa9f5;
+            width: 48%;
+            margin-right: 5px;
+        }
+        
+        .timeline-column-left,
+        .timeline-column-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        @media (min-width: 767px) {
+            .timeline-column-left,
+            .timeline-column-right {
+                width: 48%;
+                margin-bottom: 0;
+            }
+            .centerline-left,
+            .centerline-right {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .centerline {
+                border-right: none;
+            }
+        }
+        
+        .timeline-column-left p,
+        .timeline-column-right p {
+            padding: 0 26%;
+            margin-bottom: 0px;
+        }
+        
+        .timeline-column-left h4,
+        .timeline-column-right h4 {
+            margin-top: 16px;
+        }
+        
+        .timeline-column-left:after {
+            content: '';
+            position: relative;
+            bottom: 0px;
+            left: 0%;
+            transform: translatey(0%) translatex(0%) rotate(270deg);
+            transform-origin: 50% 50%;
+            width: 110px;
+            height: 50px;
+            display: inline-block;
+            background-image: url(http://sonhodepapel.com/cc/wp-content/uploads/2017/02/timelineHorisontal@0.5x.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            margin-top: 40px;
+        }
+        
+        @media (min-width: 767px) {
+            .timeline-column-left:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                transform: none;
+                bottom: initial;
+                width: 100%;
+                height: 50px;
+                display: inline-block;
+                background-image: url("http://sonhodepapel.com/cc/wp-content/uploads/2017/02/timelineHorisontal@0.5x.png");
+                background-repeat: no-repeat;
+                background-position: right center;
+                margin-top: 0px;
+            }
+        }
+        
+        .timeline-column-right:after {
+            content: '';
+            position: relative;
+            bottom: 0px;
+            left: 0%;
+            transform: translatey(0%) translatex(0%) rotate(270deg);
+            transform-origin: 50% 50%;
+            width: 110px;
+            height: 50px;
+            display: inline-block;
+            background-image: url(http://sonhodepapel.com/cc/wp-content/uploads/2017/02/timelineHorisontal@0.5x.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            margin-top: 40px;
+        }
+        
+        @media (min-width: 767px) {
+            .timeline-column-right:after {
+                content: '';
+                position: relative;
+                display: none;
+            }
+        }
+        
+        @media (min-width: 767px) {
+            .timeline-column-right:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translatex(0%) rotate(180deg);
+                width: 100%;
+                height: 50px;
+                display: inline-block;
+                background-image: url("http://sonhodepapel.com/cc/wp-content/uploads/2017/02/timelineHorisontal@0.5x.png");
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+        }
+        
+        .como-row {
+            padding: 0 32px;
+        }
+        
+        .ultimos-header-row,
+        .ultimos-row {
+            padding-bottom: 2em !important;
+            margin-bottom: 0px;
+        }
+        
+        @media (min-width: 767px) {
+            .como-row {
+                padding: 0 64px;
+            }
+        }
+        
+        @media (min-width: 1280px) {
+            .como-row {
+                padding: 0 128px;
+            }
+        }
+        
+        .como-row img {
+            text-align: center;
+            max-width: 50%;
+        }
+        
+        .ultimos-row h4 {
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+        }
+        
+        .ultimos-row img {
+            margin-bottom: 24px !important;
+            border: 6px solid grey;
+        }
+        /*.como-row p {
+            font-family: 'Droid Sans', sans-serif;
+            font-size: 0.7em !important;
+        }
+        
+        @media (min-width: 1024px) {
+            .como-row p {
+                font-size: 0.8em !important;
+            }
+        }
+        */
+        
+        .como-icon {
+            position: relative;
+            margin-left: 50%;
+            transform: translatex(-50%);
+            margin-bottom: 0px;
+        }
+        
+        .como-row {
+            margin-bottom: 0px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav id="hamburger" role="navigation">
+        <div id="menuToggle" class="white">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="category/brogues.html">Spacecraft</a>
+                </li>
+                <li><a href="contact.html">History</a>
+                </li>
+                <li><a href="about.html">Timeline</a>
+                </li>
+
+            </ul>
+        </div>
+        <img class="logo" src="images/LethaLogo%20Green.svg" />
+    </nav>
+    <nav class="mobile-hidden">
+
+        <img class="logo" src="images/LethaLogo%20Green.svg" />
+        <div id="countdown-container">
+            <h1 id="mycountdown"></h1>
+        </div>
+        <ul class="tablet-white">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="contact.html">Spacecraft</a>
+            </li>
+            <li><a href="contact.html">History</a>
+            </li>
+            <li><a href="about.html">Timeline</a>
+            </li>
+        </ul>
+    </nav>
+    <article class="historical-intro">
+        <h1>test</h1>
+        <h2>Historical perspective</h2>
+        <p>Thule Greek: Θούλη, Thoúlē; Latin: Thule, Tile was the place located furthest north, which was mentioned in ancient Greek and Roman literature and cartography. In classical and medieval literature, ultima Thule (Latin "furthermost Thule") acquired a metaphorical meaning of any distant place located beyond the "borders of the known world". By the late middle ages and early modern era, the Greco-Roman Thule was often identified with the real Iceland or Greenland. Sometimes Ultima Thule was a Latin name for Greenland, when Thule was used for Iceland.</p>
+        <p>By the late 19th century, however, Thule was frequently identified with Norway, In 1910, the explorer Knud Rasmussen established a missionary and trading post, which he named Thule (later Qaanaaq), on Greenland.</p>
+        <p>Modern interpretations of the ancient Greek and Roman place name have included Orkney, Shetland, the island of Saaremaa (Osel) in Estonia, and the Norwegian island of Smøla.</p>
+    </article>
+    <section class="como-row">
+        <article class="timeline-column-left ">
+            <img src="images/Christian-krohg-leiv-eriksson.jpg" />
+            <h4>CA 1000 AD</h4>
+            <p class="como-descr como-descr-left">Leif Erikson reaches Vinland (North-Amerika)</p>
+        </article>
+        <div class="centerline-right">
+        </div>
+    </section>
+    <section class="como-row">
+        <div class="centerline-left">
+        </div>
+        <article class="timeline-column-right">
+            <img src="images/marco_polo.jpg" />
+            <h4>1271-1295</h4>
+            <p class="como-descr como-descr-left">Marco Polo Travels to China and Asia</p>
+        </article>
+    </section>
+    <section class="como-row">
+        <article class="timeline-column-left ">
+            <img src="images/Landing_of_Columbus.jpg" />
+            <h4>1492</h4>
+            <p class="como-descr como-descr-left">Christopher Columbus reaches Bahamas</p>
+        </article>
+        <div class="centerline-right">
+        </div>
+    </section>
+    <section class="como-row">
+        <div class="centerline-left">
+        </div>
+        <article class="timeline-column-right">
+            <img src="images/amundsen.jpg" />
+            <h4>14. December 1911</h4>
+            <p class="como-descr como-descr-left">Roald Amundsen reaches the South Pole</p>
+        </article>
+    </section>
+    <section class="como-row">
+        <article class="timeline-column-left ">
+            <img src="images/Arctic_Ocean.png" />
+            <h4>12. May 1926</h4>
+            <p class="como-descr como-descr-left">Roald Amundsen reaches the North Pole</p>
+        </article>
+        <div class="centerline-right">
+        </div>
+    </section>
+    <section class="como-row">
+        <div class="centerline-left">
+        </div>
+        <article class="timeline-column-right">
+            <img src="images/luna2.jpg" />
+            <h4>13. Sept 1959</h4>
+            <p class="como-descr como-descr-left">Soviet Union's Luna 2 lands on the moon</p>
+        </article>
+    </section>
+    <section class="como-row">
+        <article class="timeline-column-left ">
+            <img src="images/apollo11.jpg" />
+            <h4>20. July 1969</h4>
+            <p class="como-descr como-descr-left">Apollo 11 lands on the moon</p>
+        </article>
+        <div class="centerline-right">
+        </div>
+    </section>
+    <section class="como-row">
+        <div class="centerline-left">
+        </div>
+        <article class="timeline-column-right">
+            <img src="images/blue_skies_on_pluto.png" />
+            <h4>14. July 2015</h4>
+            <p class="como-descr como-descr-left">New Horizon Pluto flyby</p>
+        </article>
+    </section>
+
+
+
+
+
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+</body>
+
+</html>

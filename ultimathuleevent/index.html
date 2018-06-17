@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>New Horizons - Ultima Thule Event</title>
+    <meta name="description" content="Microsite about New Horizons approavh to Ultima Thule 31.December 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Dosis:600,700,800|Fira+Sans:500,500i,600,600i,700,700i|Gochi+Hand|Roboto:500,500i,700,700i,900,900i|Rubik:500,500i,700,700i,900,900i|Source+Code+Pro:900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link href="js/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+    <script src="js/vis/dist/vis.js"></script>
+    <script src="js/countdown.js"></script>
+
+
+
+
+
+    <style type="text/css">
+        body,
+        html {
+            font-family: sans-serif;
+        }
+        
+        .myvisual {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(20, 5%);
+            grid-template-rows: repeat(10, 10%);
+        }
+        
+        #myhorizon {
+            display: flex;
+            flex-direction: column;
+            width: 288px;
+            /* height: 40px; */
+            position: absolute;
+            left: 27.5%;
+            top: 74%;
+            transform: translateX(-50%);
+            z-index: 9;
+            /*grid-column: 3 / 4;
+         grid-row: 2 / 3;*/
+        }
+        
+        #myhorizon img {
+            width: 40px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .cardarticle {
+            padding: 0 16px 16px;
+            background-color: white;
+            overflow-y: scroll;
+        }
+        
+        .cardarticle::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .solar-background {
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .left-offset {
+            transform: translateX(-50%)
+        }
+        
+        .timeline-section {
+            width: 100%;
+        }
+        
+        .aqua {
+            color: aqua;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav id="hamburger" role="navigation">
+        <div id="menuToggle" class="white">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="category/brogues.html">Spacecraft</a>
+                </li>
+                <li><a href="contact.html">History</a>
+                </li>
+                <li><a href="about.html">Timeline</a>
+                </li>
+
+            </ul>
+        </div>
+        <img class="logo" src="images/LethaLogo%20Green.svg" />
+    </nav>
+    <nav class="mobile-hidden">
+
+        <img class="logo" src="images/LethaLogo%20Green.svg" />
+        <div id="countdown-container">
+            <h1 id="mycountdown"></h1>
+        </div>
+        <ul class="tablet-white">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="contact.html">Spacecraft</a>
+            </li>
+            <li><a href="contact.html">History</a>
+            </li>
+            <li><a href="about.html">Timeline</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <section class="hero-grid">
+        <div class="hero-container flex-column-center-evenly">
+            <h2 class="comic"> IT’S A PEANUT... IT’S A PLANUT... IT’S ULTIMA THULE</h2>
+            <article class="cta flex-column-center-between">
+                <h4>Join New Horizon on new years eve<br />
+ as it once again extends the limits of human endevour,<br /> 
+and changes history forever</h4>
+                <a class="button" href="#">Sign up for the live feed</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="info flex-column-center-around">
+        <h4>In 2015 New Horizon gave us extraordinary images of Pluto<br />
+On new years eve 2018 it will give us Kupier Belt Object 2014 MU69<br />
+1.6 billion kilometers beyond Pluto<br />
+Now known as:<br />
+ULTIMA THULE</h4>
+    </section>
+    <section class="teaser-row">
+        <article class="teaser-card">
+            <a class="teaser-link" href="../product/hardy-hiker.html">
+                <img class="teaser-image" src="images/thulemap.jpg">
+
+                <h4 class="teaser-title">Ultima Thule - <br />Historic perspective</h4>
+            </a>
+        </article>
+        <article class="teaser-card">
+            <a class="teaser-link" href="../product/hardy-hiker.html">
+                <img class="teaser-image" src="images/thulemap.jpg">
+
+                <h4 class="teaser-title">Ultima Thule - <br />Historic perspective</h4>
+            </a>
+        </article>
+        <article class="teaser-card">
+            <a class="teaser-link" href="../product/hardy-hiker.html">
+                <img class="teaser-image" src="images/thulemap.jpg">
+
+                <h4 class="teaser-title">Ultima Thule - <br />Historic perspective</h4>
+            </a>
+        </article>
+        <article class="teaser-card">
+            <a class="teaser-link" href="../product/hardy-hiker.html">
+                <img class="teaser-image" src="images/thulemap.jpg">
+
+                <h4 class="teaser-title">Ultima Thule - <br />Historic perspective</h4>
+            </a>
+        </article>
+    </section>
+
+    <section class="timeline-section">
+        <div class="myvisual">
+            <img class="solar-background" src="images/SolarSystemBig.png" alt="The solar system" />
+            <div id="myhorizon">
+                <img src="images/NewHorizon.png" alt="New Horizon vessel vector">
+            </div>
+        </div>
+        <div id="visualization"></div>
+    </section>
+
+
+
+    <script src="js/timeline.js"></script>
+</body>
+
+</html>
